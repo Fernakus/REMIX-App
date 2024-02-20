@@ -1,0 +1,75 @@
+Arguments: 
+  /Users/fern/.nvm/versions/node/v20.0.0/bin/node /Users/fern/.cache/node/corepack/yarn/1.22.19/bin/yarn.js install
+
+PATH: 
+  /Users/fern/.rvm/gems/ruby-3.1.2/bin:/Users/fern/.rvm/gems/ruby-3.1.2@global/bin:/Users/fern/.rvm/rubies/ruby-3.1.2/bin:/Users/fern/.nvm/versions/node/v20.0.0/bin:/Users/fern/.bun/bin:/opt/homebrew/opt/libpq/bin:/opt/homebrew/opt/postgresql@15/bin:/Users/fern/.pyenv/shims:/Users/fern/.nvm/versions/node/v20.0.0/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/Library/Frameworks/Python.framework/Versions/3.8/bin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/Library/Apple/usr/bin:/usr/local/share/dotnet:~/.dotnet/tools:/usr/local/go/bin:/Library/Frameworks/Mono.framework/Versions/Current/Commands:/Users/fern/.rvm/gems/ruby-3.1.2/bin:/Users/fern/.rvm/gems/ruby-3.1.2@global/bin:/Users/fern/.rvm/rubies/ruby-3.1.2/bin:/Users/fern/.bun/bin:/opt/homebrew/opt/libpq/bin:/opt/homebrew/opt/postgresql@15/bin:/Users/fern/.nvm/versions/node/v20.0.0/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/Library/Frameworks/Python.framework/Versions/3.8/bin:/Users/fern/Library/Application Support/Coursier/bin:/Users/fern/flutter/bin:/Users/fern/.cabal/bin:/Users/fern/.ghcup/bin:/Users/fern/.rvm/bin:/Users/fern/Library/Application Support/Coursier/bin:/Users/fern/flutter/bin
+
+Yarn version: 
+  1.22.19
+
+Node version: 
+  20.0.0
+
+Platform: 
+  darwin arm64
+
+Trace: 
+  TypeError [ERR_INVALID_URL]: Invalid URL
+      at new NodeError (node:internal/errors:399:5)
+      at Url.parse (node:url:444:17)
+      at urlParse (node:url:166:13)
+      at Function.isVersion (/Users/fern/.cache/node/corepack/yarn/1.22.19/lib/cli.js:37204:21)
+      at getExoticResolver (/Users/fern/.cache/node/corepack/yarn/1.22.19/lib/cli.js:29718:18)
+      at PackageRequest.<anonymous> (/Users/fern/.cache/node/corepack/yarn/1.22.19/lib/cli.js:36566:76)
+      at Generator.next (<anonymous>)
+      at step (/Users/fern/.cache/node/corepack/yarn/1.22.19/lib/cli.js:310:30)
+      at /Users/fern/.cache/node/corepack/yarn/1.22.19/lib/cli.js:321:13
+      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+npm manifest: 
+  {
+    "name": "remix-app",
+    "private": true,
+    "sideEffects": false,
+    "scripts": {
+      "build": "remix build",
+      "dev": "remix dev --manual",
+      "lint": "eslint --ignore-path .gitignore --cache --cache-location ./node_modules/.cache/eslint .",
+      "start": "remix-serve build",
+      "typecheck": "tsc"
+    },
+    "dependencies": {
+      "@remix-run/node": "^2.6.0",
+      "@remix-run/react": "^2.6.0",
+      "@remix-run/serve": "^2.6.0",
+      "isbot": "^4.1.0",
+      "match-sorter": "^6.3.1",
+      "react": "^18.2.0",
+      "react-dom": "^18.2.0",
+      "sort-by": "^1.2.0",
+      "tiny-invariant": "^1.3.1"
+    },
+    "devDependencies": {
+      "@remix-run/dev": "^2.3.1",
+      "@types/react": "^18.2.20",
+      "@types/react-dom": "^18.2.7",
+      "@typescript-eslint/eslint-plugin": "^6.13.0",
+      "@typescript-eslint/parser": "^6.13.0",
+      "eslint": "^8.47.0",
+      "eslint-import-resolver-typescript": "^3.6.1",
+      "eslint-plugin-import": "^2.29.1",
+      "eslint-plugin-jsx-a11y": "^6.8.0",
+      "eslint-plugin-react": "^7.33.2",
+      "eslint-plugin-react-hooks": "^4.6.0",
+      "typescript": "^5.1.6"
+    },
+    "engines": {
+      "node": ">=18.0.0"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
